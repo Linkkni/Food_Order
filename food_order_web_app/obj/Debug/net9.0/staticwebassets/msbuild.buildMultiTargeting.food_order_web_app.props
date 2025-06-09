@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\food_order_web_app.props" />
+</Project>

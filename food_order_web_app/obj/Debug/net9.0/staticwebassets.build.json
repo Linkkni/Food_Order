@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "M7Dc4OSV0RQMjdHUZn11VK3lfWCzWBYINMLTxdLek38=",
+  "Source": "food_order_web_app",
+  "BasePath": "_content/food_order_web_app",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

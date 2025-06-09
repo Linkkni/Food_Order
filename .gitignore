@@ -1,0 +1,41 @@
+# Tệp log
+# Bỏ qua các file log để tránh làm đầy kho chứa với thông tin gỡ lỗi.
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Thư mục chứa thư viện (RẤT QUAN TRỌNG)
+# Thư mục này chứa hàng ngàn file và có thể được tái tạo bằng `npm install`.
+node_modules/
+
+# Thư mục build và phân phối
+# Các file này được tạo tự động từ mã nguồn, không cần lưu trữ.
+dist
+dist-ssr
+build
+.cache
+.parcel-cache
+
+# File biến môi trường (BẢO MẬT)
+# Chứa các thông tin nhạy cảm như API keys, mật khẩu database.
+# TUYỆT ĐỐI không đưa lên Git.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+
+# File do hệ điều hành và IDE tạo ra
+# Giữ kho chứa sạch sẽ.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

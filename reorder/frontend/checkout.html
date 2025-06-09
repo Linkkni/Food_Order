@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng & Thanh Toán</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Giỏ Hàng & Thanh Toán</h1>
+        <nav>
+            <a href="index.html">Tiếp tục mua sắm</a>
+            <a href="orders.html">Đơn Hàng Của Tôi</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart-details">
+            <h2>Chi Tiết Giỏ Hàng</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Đơn giá</th>
+                        <th>Thành tiền</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-tbody">
+                </tbody>
+            </table>
+            <p class="total">Tổng cộng: <span id="cart-total">0</span> VNĐ</p>
+        </section>
+
+        <section id="checkout-form-section">
+            <h2>Thông Tin Giao Hàng</h2>
+            <form id="checkout-form">
+                <label for="customerId">Mã khách hàng (VD: ALFKI):</label>
+                <input type="text" id="customerId" name="customerId" required>
+
+                <label for="shipName">Tên người nhận:</label>
+                <input type="text" id="shipName" name="shipName" required>
+
+                <label for="shipAddress">Địa chỉ giao hàng:</label>
+                <input type="text" id="shipAddress" name="shipAddress" required>
+
+                <label for="shipCity">Thành phố:</label>
+                <input type="text" id="shipCity" name="shipCity" required>
+
+                <label for="shipCountry">Quốc gia:</label>
+                <input type="text" id="shipCountry" name="shipCountry" required>
+
+                <button type="submit">Xác Nhận & Đặt Hàng</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nhà Hàng Tuyệt Vời</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>

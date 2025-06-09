@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Sử Đơn Hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lịch Sử Đơn Hàng</h1>
+        <nav>
+            <a href="index.html">Thực Đơn</a>
+            <a href="checkout.html">Giỏ Hàng</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="customer-lookup">
+            <h2>Tìm Kiếm Đơn Hàng</h2>
+            <form id="lookup-form">
+                <label for="lookup-customerId">Nhập mã khách hàng của bạn:</label>
+                <input type="text" id="lookup-customerId" required placeholder="Ví dụ: ALFKI">
+                <button type="submit">Xem Đơn Hàng</button>
+            </form>
+        </section>
+
+        <section id="order-history">
+            <h2>Kết quả</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nhà Hàng Tuyệt Vời</p>
+    </footer>
+    <script src="js/api.js"></script>
+    <script src="js/orders.js"></script>
+</body>
+
+</html>
